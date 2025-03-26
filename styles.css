@@ -1,10 +1,22 @@
 /* GENERAL STYLES */
+/* html{
+  position: relative;
+  height: 100vh;
+} */
+
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   background-color: #f4f6f9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  align-self: center;
+  position: relative;
 }
 
 /* HEADER */
@@ -14,6 +26,7 @@ header {
   background-color: #0062b3;
   padding: 0px 30px;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .logo {
@@ -24,7 +37,11 @@ header {
 }
 
 .logo img {
-  height: 100px;
+  height: 90px;
+}
+
+.logo h1 {
+  font-size: 1.7rem;
 }
 
 nav ul {
@@ -47,8 +64,8 @@ nav ul li a {
 /* LAYOUT */
 .container {
   display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
+  max-height: 68vh;
+  margin: 0 10vw;
 }
 
 /* SIDEBAR */
@@ -58,6 +75,7 @@ aside {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
 }
 
 aside ul {
@@ -81,12 +99,12 @@ aside ul li:hover {
 }
 
 aside ul ul {
+  padding-top: 2px;
   padding-left: 15px;
 }
 
 aside ul ul li {
   font-weight: normal;
-  padding: 8px 20px;
   transition: background 0.3s, padding-left 0.3s;
 }
 
@@ -104,15 +122,17 @@ main {
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
+  overflow: scroll;
+  /* max-width: 70vh; */
 }
 
 /* FOOTER */
 footer {
+  position: relative;
   text-align: center;
   background-color: #0056b3;
   color: white;
-  padding: 15px 0;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 /* RESPONSIVE DESIGN */
@@ -120,6 +140,8 @@ footer {
   .container {
     flex-direction: column;
     padding: 10px;
+    margin: 0 1rem;
+    max-height: fit-content;
   }
 
   aside {
