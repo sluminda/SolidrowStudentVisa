@@ -12,40 +12,66 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Visa Types",
+
       content: `
-        <h2>Visa Types</h2>
-        <p>South Korea offers various student visa categories, primarily the D-2 visa for academic programs and the D-4 visa for general training courses. Each visa type has specific eligibility criteria, application requirements, and validity periods.</p>
-        <table border="1" cellpadding="5" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Visa Type</th>
-              <th>Description</th>
-              <th>Grant Duration</th>
-              <th>Total Study Period</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>D-2 Visa</strong></td>
-              <td>For students pursuing degree programs at Korean universities.</td>
-              <td>1-2 years (renewable)</td>
-              <td>2-6 years (varies by degree)</td>
-            </tr>
-            <tr>
-              <td><strong>D-4 Visa</strong></td>
-              <td>For students enrolled in non-degree programs like language studies or vocational training.</td>
-              <td>6 months - 1 year (renewable)</td>
-              <td>1-2 years (varies by program)</td>
-            </tr>
-            <tr>
-              <td><strong>D-10 Visa</strong></td>
-              <td>For graduates seeking employment or professional internships in Korea.</td>
-              <td>6 months (extendable up to 2 years)</td>
-              <td>N/A (job-seeking or internship period)</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2>Visa Types</h2>
+      <p>South Korea offers various visa options for students, graduates, and their dependents. These visas facilitate education, employment, and potential pathways to long-term residency or citizenship.</p>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Visa Type</th>
+            <th>Description</th>
+            <th>Grant Duration</th>
+            <th>Total Study/Stay Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D-2 Visa</strong></td>
+            <td>For students pursuing degree programs at Korean universities.</td>
+            <td>1-2 years (renewable)</td>
+            <td>2-6 years (varies by degree)</td>
+          </tr>
+          <tr>
+            <td><strong>D-4 Visa</strong></td>
+            <td>For students enrolled in non-degree programs like language studies or vocational training.</td>
+            <td>6 months - 1 year (renewable)</td>
+            <td>1-2 years (varies by program)</td>
+          </tr>
+          <tr>
+            <td><strong>D-10 Visa</strong></td>
+            <td>For graduates seeking employment or professional internships in Korea.</td>
+            <td>6 months (extendable up to 2 years)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><strong>F-3 Visa</strong></td>
+            <td>For dependents (spouses & children) of D-2 or D-4 visa holders.</td>
+            <td>Same duration as primary visa holder</td>
+            <td>Varies</td>
+          </tr>
+          <tr>
+            <td><strong>F-2 Visa</strong></td>
+            <td>Residence visa for individuals transitioning from work/study visas.</td>
+            <td>1-3 years (renewable)</td>
+            <td>Varies (leads to permanent residency)</td>
+          </tr>
+          <tr>
+            <td><strong>F-5 Visa</strong></td>
+            <td>Permanent Residency (granted after long-term stay & contribution).</td>
+            <td>Indefinite</td>
+            <td>Permanent</td>
+          </tr>
+          <tr>
+            <td><strong>Korean Citizenship</strong></td>
+            <td>Final stage after long-term residency, work, or marriage.</td>
+            <td>N/A</td>
+            <td>Permanent</td>
+          </tr>
+        </tbody>
+      </table>
       `,
+
       subcategories: [
         {
           title: "D-2 Visa",
@@ -108,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </table>
           `,
         },
+
         {
           title: "D-4 Visa",
           content: `
@@ -151,8 +178,9 @@ document.addEventListener("DOMContentLoaded", function () {
             </table>
           `,
         },
+
         {
-          title: "D-10 Visa",
+          title: "D-10 Visa (Internship)",
           content: `
             <h2>D-10 Visa (Job-Seeking & Internship Visa)</h2>
             <p>The D-10 visa is an option for students who have completed their studies and wish to remain in South Korea to seek employment or professional internships.</p>
@@ -178,6 +206,101 @@ document.addEventListener("DOMContentLoaded", function () {
               </tbody>
             </table>
           `,
+        },
+
+        {
+          title: "F-3 Visa (Dependent)",
+          content: `
+              <h2>F-3 Visa (Dependent Visa for Family Members)</h2>
+              <p>The F-3 visa allows family members (spouses and children) of D-2 and D-4 visa holders to reside in South Korea.</p>
+              <h3>Eligibility:</h3>
+              <ul>
+                <li>Spouses and minor children of a valid D-2 or D-4 visa holder.</li>
+                <li>Proof of financial ability to support dependents.</li>
+              </ul>
+              <h3>Application Requirements:</h3>
+              <ul>
+                <li>Proof of relationship (marriage certificate, birth certificate).</li>
+                <li>Sponsoring student’s valid visa and financial documents.</li>
+                <li>Accommodation proof in Korea.</li>
+              </ul>
+              <h3>Work Restrictions:</h3>
+              <p>F-3 visa holders are not allowed to work unless they obtain a separate work permit.</p>
+            `,
+        },
+
+        {
+          title: "Pathway to Citizenship",
+          content: `
+              <h2>Pathway from D-4 to D-2 to Citizenship</h2>
+              <p>Many international students start their journey in South Korea with a D-4 visa (language training) before advancing to a D-2 visa (degree program). After graduation, they may apply for a D-10 (job-seeking visa), then transition to F-2 (residency), and eventually F-5 (permanent residency) or Korean citizenship.</p>
+      
+              <h3>Step-by-Step Process:</h3>
+              <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Stage</th>
+                    <th>Description</th>
+                    <th>Visa Required</th>
+                    <th>Duration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. Language Training</strong></td>
+                    <td>Enroll in a Korean language program at a university.</td>
+                    <td>D-4 Visa</td>
+                    <td>6 months - 2 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. Degree Program</strong></td>
+                    <td>Enroll in an undergraduate, master’s, or PhD program.</td>
+                    <td>D-2 Visa</td>
+                    <td>2-6 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. Job Seeking</strong></td>
+                    <td>Apply for jobs in South Korea after graduation.</td>
+                    <td>D-10 Visa</td>
+                    <td>6 months - 2 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4. Residency Visa</strong></td>
+                    <td>After securing employment, apply for long-term residency.</td>
+                    <td>F-2 Visa</td>
+                    <td>1-3 years</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5. Permanent Residency</strong></td>
+                    <td>Obtain F-5 visa after contributing to Korean society.</td>
+                    <td>F-5 Visa</td>
+                    <td>Indefinite</td>
+                  </tr>
+                  <tr>
+                    <td><strong>6. Korean Citizenship</strong></td>
+                    <td>Apply for Korean citizenship through naturalization.</td>
+                    <td>Korean Nationality</td>
+                    <td>Permanent</td>
+                  </tr>
+                </tbody>
+              </table>
+      
+              <h3>How to Change from D-4 to D-2?</h3>
+              <ul>
+                <li>Complete at least 6 months in a recognized Korean language program.</li>
+                <li>Receive an acceptance letter from a Korean university for a degree program.</li>
+                <li>Apply for a visa change from D-4 to D-2 at the Korean Immigration Office.</li>
+                <li>Provide updated financial proof, academic transcripts, and tuition payment receipt.</li>
+              </ul>
+      
+              <h3>How to Get Korean Citizenship?</h3>
+              <ul>
+                <li>Reside in South Korea for 5+ years on an F-2 or F-5 visa.</li>
+                <li>Demonstrate fluency in Korean (TOPIK Level 5 or 6).</li>
+                <li>Pass a Korean culture and history exam.</li>
+                <li>Show financial stability and community involvement.</li>
+              </ul>
+            `,
         },
       ],
     },
